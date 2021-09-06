@@ -71,6 +71,9 @@ function init_threeScene(spec){
   const threeFaceFollowers = extract_threeChildrenWithId('jeelizFaceFilterFollow', THREESCENE);
   if (!threeFaceFollowers || !threeFaceFollowers.length){
     alert('No element with id = jeelizFaceFilterFollow has been found in the A-Frame scene. You should have at least one. Otherwise none of your stuffs will follow the head');
+    console.log("ERROR");
+    console.log(threeFaceFollowers);
+    console.log(threeFaceFollowers.length);
   } else  {
     threeFaceFollowers.forEach(function(threeStuff){
       THREEFACEOBJ3DPIVOTED.add(threeStuff);
